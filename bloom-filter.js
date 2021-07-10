@@ -1,8 +1,9 @@
 
 const fs = require('fs');
 const readline = require('readline');
+//https://github.com/blueimp/JavaScript-MD5
 const md5 = require("blueimp-md5")
-const bitMapArray = new Array(0xffffff, 0);
+const bitMapArray = new Array(0xffffff, 0); // the more space I gave, the results were more accurate 
 
 var text = fs.readFileSync("words.txt").toString('utf-8');
 var textByLine = text.split("\n");
@@ -35,8 +36,8 @@ function enterWord() {
 }
 
 function hashWord(word) {
-    let hash = md5(word);
-    let smallerHash = hash.substring(0, 5);
+    let hash = md5(word); 
+    let smallerHash = hash.substring(0, 5); // got substring of the hashcode for smaller hash
     let index = parseInt(smallerHash, 16);
     return index;
 
