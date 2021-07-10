@@ -1,0 +1,26 @@
+{
+  "name": "bloom-filter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bloom-filter.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "blueimp-md5": "^2.18.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssiahpolo1/bloom-filter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssiahpolo1/bloom-filter/issues"
+  },
+  "homepage": "https://github.com/ssiahpolo1/bloom-filter#readme"
+}
